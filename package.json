@@ -1,0 +1,27 @@
+{
+  "name": "metalsmith-differential",
+  "version": "1.0.0",
+  "description": "A Metalsmith plugin for building only changed files.",
+  "main": "src/plugin.js",
+  "repository": "mrajo/metalsmith-date-index",
+  "author": {
+    "name": "mrajo",
+    "email": "anthony.c@stle.co"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.2.0",
+    "object-assign": "^4.0.1"
+  },
+  "devDependencies": {
+    "assert-dir-equal": "^1.0.1",
+    "buffer-equal": "0.0.1",
+    "is-utf8": "^0.2.0",
+    "metalsmith": "^1.7.0",
+    "mocha": "^2.2.5",
+    "swig": "^1.4.2"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}
