@@ -32,19 +32,19 @@ function plugin(params) {
         var dst_ctime = 0;
 
         if (files[file].stats) {
-        src_ctime = files[file].stats.ctime.getTime();
+          src_ctime = files[file].stats.ctime.getTime();
         }
 
         var dst_file = metalsmith.path(dst, file);
 
         fs.stat(dst_file, function (err, stats) {
-        if (!err) dst_ctime = stats.ctime.getTime();
+          if (!err) dst_ctime = stats.ctime.getTime();
 
-        if (dst_ctime > src_ctime) {
-          delete files[file];
-        }
+          if (dst_ctime > src_ctime) {
+            delete files[file];
+          }
 
-        done();
+          done();
         });
       },
       function (err) {
