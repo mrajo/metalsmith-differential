@@ -20,7 +20,7 @@ function plugin(params) {
   var options = config(params);
 
   return function (files, metalsmith, done) {
-    if (options.force) done();
+    if (options.force) return done();
 
     var dst = options.destination || metalsmith.destination();
 
