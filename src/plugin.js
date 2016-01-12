@@ -11,7 +11,7 @@ function config(params) {
   };
 
   if ('object' == typeof params) Object.assign(options, params);
-  if ('string' == typeof string) Object.assign(options, { destination: params });
+  if ('string' == typeof params) Object.assign(options, { destination: params });
 
   return options;
 }
